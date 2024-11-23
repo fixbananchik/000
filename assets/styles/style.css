@@ -5,23 +5,20 @@ body{
 .header{
     width: 100%;
     height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0px 130px;
+    box-sizing: border-box;
 }
 
-.header_logo{
+.header__logo{
     width: 110px;
     height: 16px;
-    top: 32px;
-    left: 130px;
-    position: absolute;
 }
 
-.header_menu{
-    width:400px;
-    height:14px;
-    top: 32px;
-    left: 520px;
-    gap: 32px;
-    position: absolute;
+.header__menu{
     color: white;
     font-family: inter ;
     font-size: 20px;
@@ -30,16 +27,13 @@ body{
     gap: 32px;
 }
 
-.header_buttons{
-    position: absolute;
-    top: 20px;
-    left: 1106px;
+.header__buttons{
     display: flex;
     flex-direction: row;
     gap: 5px;
 }
 
-.header_button1{
+.header__buttons_button1{
     color: white;
     width: 156px;
     height: 56px;
@@ -53,7 +47,7 @@ body{
 }
 
 
-.header_button2{
+.header__buttons_button2{
     color: white;
     width: 156px;
     height: 56px;
@@ -66,14 +60,15 @@ body{
     cursor: pointer;
 }
 
-.block1{
+.block{
     width: 100%;
     height: 907px;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 
-.block1_content{
+.block__content{
     margin-top: 169px;
     width: 780px ;
     height: 373px;
@@ -83,7 +78,7 @@ body{
     gap: 30px;
 }
 
-.block1_content_title{
+.block__content_title{
     font-family: inter;
     color: white;
     font-size: 85px;
@@ -91,7 +86,7 @@ body{
     margin-left: 54px;
 }
 
-.block1_content_text{
+.block__content_text{
     display: flex;
     color: #898CA9;
     font-size: 16px;
@@ -101,7 +96,7 @@ body{
     justify-content: center;
 }
 
-.block1_content_button{
+.block__content_button{
     color: white;
     width: 156px;
     height: 56px;
@@ -112,19 +107,25 @@ body{
     align-items: center;
     font-family: inter;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
 }
 
-.block1_content_button:hover {background-color: linear-gradient(225deg, #18C8FF 14.89%, #933FFE 85.85%)}
+.block__content_button:hover {
+    background: linear-gradient(225deg, #6b9aa9 14.89%, #8465ab 85.85%);
+}
 
-.block1_content_button:active {
+.block__content_button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
-  transform: translateY(4px)}
+  transform: translateY(4px)
+}
 
-#block2_content_title{
+
+#block2 > .block__content > .block__content_title{
     font-size: 50px;
 }
 
-#block2_content{
+#block2 > .block__content{
     margin-top: 0px;
 }
